@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #ffe4ec;
+}
+
+.logo {
+    color: #d48ca3;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(#ffe4ec, #fff);
+}
+
+.btn {
+    background: #d48ca3;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffe4ec;
+}
+
+/* Carrinho */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+}
+
+.cart-content {
+    padding: 20px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 22px;
+}

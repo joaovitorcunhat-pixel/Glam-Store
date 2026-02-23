@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glam Store</title>
+<meta name="description" content="Glam Store - Produtos de beleza premium">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Glam Store</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#" onclick="openCart()">Carrinho (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Realce sua beleza com a Glam Store</h2>
+    <p>Produtos selecionados para cuidar da sua pele e maquiagem</p>
+    <a href="#produtos" class="btn">Comprar Agora</a>
+</section>
+
+<section id="produtos" class="products">
+    <h2>Produtos</h2>
+    <div class="product-grid" id="product-list"></div>
+</section>
+
+<section class="benefits">
+    <div>Entrega para todo o Brasil</div>
+    <div>Pagamento seguro (Pix e cartão)</div>
+    <div>Produtos originais</div>
+</section>
+
+<footer id="contato">
+    <h3>Contato</h3>
+    <p>WhatsApp: (11) 99999-9999</p>
+    <p>Instagram: @glamstore</p>
+    <p>© 2026 Glam Store</p>
+</footer>
+
+<!-- Carrinho -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+        <span onclick="closeCart()" class="close">&times;</span>
+        <h2>Seu Carrinho</h2>
+        <div id="cart-items"></div>
+        <h3>Total: R$ <span id="cart-total">0</span></h3>
+        <button class="btn" onclick="checkout()">Finalizar no WhatsApp</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
